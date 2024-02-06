@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+</html>
+<form name="bmi-form">
+  <div class="bmi-calculator-weight">
+    <h1>Calculate your BMI</h1>
+    <div class="calculator-weight">
+      <input
+        class="weight-slider"
+        name="realweight"
+        id="myWeight"
+        type="range"
+        min="25"
+        max="180"
+        value="60"
+      />
+      <p>
+        YOUR WEIGHT:
+        <input
+          id="inputWeight"
+          type="number"
+          value="60"
+          min="25"
+          max="180"
+          oninput="showValWeight(this.value)"
+        />
+        <span id="weight"></span> kg
+      </p>
+    </div>
+    <div class="bmi-calculator-height">
+      <input
+        class="height-slider"
+        name="realheight"
+        id="myHeight"
+        type="range"
+        min="100"
+        max="220"
+        value="160"
+      />
+      <p>
+        YOUR HEIGHT:
+        <input
+          name="Something"
+          id="inputHeight"
+          type="number"
+          value="160"
+          min="100"
+          max="220"
+          oninput="showValHeight(this.value)"
+        />
+        <span id="height"></span> cm
+      </p>
+    </div>
+    <input
+      class="btn"
+      type="button"
+      value="Calculate"
+      onclick="caclculateBMI()"
+    />
+    <p>
+      <strong>YOUR BMI:</strong>
+      <span id="yourbmi"></span>
+    </p>
+    <p class="evaluation-message">
+      <span id="evaluationMessage"></span>
+    </p>
+  </div>
+</form>
