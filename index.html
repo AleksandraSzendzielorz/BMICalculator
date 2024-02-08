@@ -2,19 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>BMI Calculator</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="./js/calculator.js" defer></script>
   </head>
 </html>
-<form name="bmi-form">
+<form name="bmiForm">
   <div class="bmi-calculator">
     <h1>Calculate your BMI</h1>
-    <div class="calculator-weight">
+    <div class="bmi-calculator-weight">
       <input
         class="weight-slider"
         name="realweight"
@@ -65,7 +70,7 @@
       class="btn"
       type="button"
       value="Calculate"
-      onclick="caclculateBMI()"
+      onclick="calculateBMI()"
     />
     <p>
       <strong>YOUR BMI:</strong>

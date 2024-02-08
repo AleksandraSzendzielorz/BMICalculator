@@ -1,6 +1,6 @@
 :root {
   --background-color: hsla(0, 0%, 96%, 0.24);
-  --vigo-color: crimson;
+  --vigo-color: #eb5e28;
   --slider-color: #a3a3a3;
   --input-number-color: #ebebeb;
 }
@@ -10,7 +10,7 @@
   padding: 0;
 }
 body {
-  background-color: antiquewhite;
+  background-color: #474747;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,17 +20,30 @@ h1 {
   margin-bottom: 20px;
 }
 .bmi-calculator {
-  border: 5px solid white;
+  border: 5px solid #bdc4be;
   border-radius: 10px;
   padding: 3em;
   margin: 2em;
   height: 520px;
-  background-color: white;
+  background-color: #d3dad4;
 }
 .bmi-calculator-weight,
 .bmi-calculator-height {
   margin-bottom: 2.2em;
   width: 100%;
+}
+input[type="range"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
 }
 .weight-slider,
 .height-slider {
