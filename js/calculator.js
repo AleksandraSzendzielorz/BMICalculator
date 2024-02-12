@@ -41,9 +41,11 @@ function calculateBMI() {
   messageOutput.innerHTML = "";
   realbmiOutput.innerHTML = " " + roundedBmi;
 
-  if (roundedBmi > 26) {
-    messageOutput.innerHTML = "Start workout bro!";
+  if (roundedBmi > 25) {
+    messageOutput.innerHTML = "Your BMI is too high. Contact your doctor.";
+  } else if (roundedBmi > 18) {
+    messageOutput.innerHTML = "Your BMI is normal.";
   } else {
-    messageOutput.innerHTML = "its ok";
+    messageOutput.innerHTML = "Your BMI is too low. Contact yout doctor.";
   }
 }
